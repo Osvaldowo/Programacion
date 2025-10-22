@@ -1,0 +1,154 @@
+%! TeX program = xelatex
+%======================PROPIEDADES DEL DOCUMENTO======================================
+\documentclass[12pt,a4paper]{article}
+
+%==========================PAQUETES======================================
+\usepackage[spanish, es-noshorthands]{babel} 
+\usepackage{listings}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{titlesec}  
+\usepackage[section]{placeins}
+\usepackage{anysize}
+\usepackage{fontspec} % Para usar Times New Roman
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{circuitikz}
+\usepackage{lipsum}
+\usepackage{cite}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{bigstrut}
+\usepackage{comment}
+\usepackage{fancyhdr}  
+\usepackage{setspace} % Para el interlineado
+\usepackage{tabularx}
+\usepackage{karnaugh-map}
+\usepackage{hyperref}
+
+%=========================================
+%========== CODIGO ======================
+%=========================================
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=none,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.95}
+
+\lstset{style=mystyle}
+
+
+%==========================FUENTE Y ESTILO======================================
+\setmainfont{Times New Roman} % Fuente principal
+\renewcommand{\baselinestretch}{1.0} % Interlineado sencillo
+
+%==========================COLORES======================================
+\definecolor{azulFuerte}{RGB}{0, 0, 120}
+\definecolor{rojoUPIITA}{RGB}{180,0,0}
+\definecolor{Amarillo}{RGB}{227,162,7}
+\definecolor{Verde}{RGB}{13,171,49}
+
+%============================Formato para las secciones===========================
+% Quitar numeración en secciones
+\titleformat{\section}
+  {\bfseries\color{Amarillo}\Large}{}{0em}{}
+
+% ===============================MÁRGENES=========================================
+\marginsize{25mm}%izquierda
+{25mm} %derecha
+{15mm} %arriba
+{15mm} %abajo
+\setlength{\headheight}{15pt}
+
+%======================== ENCABEZADO==============================================
+\pagestyle{empty} % Quitar numeración de páginas y encabezados
+
+%=========================INICIO DEL DOCUMENTO=====================================
+\begin{document}
+
+%===============================PORTADA==============================================
+% Línea superior con UPIITA a la izquierda y DLP a la derecha
+\noindent
+\makebox[\textwidth]{%
+    \textbf{UPIITA-IPN}%
+    \hfill%
+    \textcolor{rojoUPIITA}{\textbf{Dispositivos Lógicos Programables}}%
+}
+
+% Bloque inferior: alumnos a la izquierda, logo a la derecha
+\vspace{5mm}
+
+\noindent
+\begin{minipage}{0.6\textwidth}
+    \raggedright% Alinea a la izquierda este bloque
+    \textbf{Práctica 01: Nombre de la práctica}\\[2mm]
+    \textbf{Alumno 1:} Flores Oropeza Osvaldo\\
+    \textbf{Alumno 2:} Ramirez Aguilar Victor Saul\\
+    \textbf{Alumno 3:} Reyes Lira Alejandro\\
+    \textbf{Grupo:} 2MV11
+\end{minipage}%
+\hfill
+\begin{minipage}{0.35\textwidth}
+    \raggedleft% Alinea a la derecha este bloque
+    \includegraphics[width=0.65\textwidth]{logos/logo_Kin.jpeg}
+\end{minipage}
+
+\vspace{10mm}
+
+%================================DOCUMENTO===========================================
+
+
+\section{Resumen}
+\input{Secciones/Resumen}
+
+\section{Abstract}
+\input{Secciones/Abstract}
+
+\section{Resumo}
+\input{Secciones/Resumo}
+
+\input{Secciones/tabla_de_contenido}
+
+\section{Pre-reporte}
+\input{Secciones/PreReporte}
+
+\section{Introducción}
+\input{Secciones/Introduccion}
+
+\section{Desarrollo}
+\input{Secciones/Desarrollo}
+
+\section{Conclusiones}
+\input{Secciones/Conclusiones}
+
+
+%===========================BIBLIOGRAFIA=========================================
+
+
+\nocite{*}
+\bibliographystyle{IEEEtran}  % Estilo de la bibliografía en formato IEEE
+\bibliography{Referencias}          
+
+\end{document}

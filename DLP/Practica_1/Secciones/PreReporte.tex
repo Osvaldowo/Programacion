@@ -1,0 +1,36 @@
+%! TEX root = C:\Users\osval\OneDrive - Instituto Politecnico Nacional\Codigos\Programacion\DLP\Practica_1\main.tex
+
+Como parte del pre-reporte solicitado, se presentan los siguientes puntos investigados:
+
+\subsection*{Lenguajes de Descripción de Hardware (HDL)}
+Los lenguajes de descripción de hardware (HDL, por sus siglas en inglés) permiten describir el comportamiento y la estructura de sistemas digitales. Los más utilizados son:
+\begin{itemize}
+    \item \textbf{VHDL}: Lenguaje robusto, fuertemente tipado y muy usado en la industria aeroespacial y militar. Facilita el modelado en distintos niveles de abstracción (comportamental, RTL, estructural).
+    \item \textbf{Verilog}: Lenguaje más simple y con sintaxis similar a C. Es ampliamente empleado en aplicaciones industriales y académicas, especialmente en diseño de lógica digital.
+\end{itemize}
+Ambos lenguajes permiten la simulación, verificación, síntesis e implementación de circuitos digitales en CPLDs y FPGAs.
+
+\subsection*{CPLD y FPGA}
+\begin{itemize}
+    \item \textbf{CPLD (Complex Programmable Logic Device)}: Son dispositivos lógicos programables de mediana capacidad, con arquitectura basada en macroceldas. Son adecuados para implementar lógica combinacional y secuencial de menor escala.
+    \item \textbf{FPGA (Field Programmable Gate Array)}: Dispositivos programables con gran cantidad de bloques lógicos configurables, memoria interna y recursos adicionales (DSPs, PLLs, etc.). Permiten implementar desde sistemas digitales simples hasta procesadores completos.
+\end{itemize}
+
+\subsection*{Circuitos Externos Requeridos}
+Para el desarrollo de la práctica se requieren algunos circuitos adicionales:
+\begin{itemize}
+    \item \textbf{Etapa de potencia de audio}: Amplificador de al menos 3W para excitar una bocina de 4 u 8 ohms.
+    \item \textbf{Fuente de alimentación externa}: Regulada para garantizar un funcionamiento estable de los módulos adicionales.
+    \item \textbf{Periféricos}: PmodALS (sensor de luz), encoder rotatorio y conexiones para RS232, dependiendo de las actividades a desarrollar.
+\end{itemize}
+
+\subsection*{Metodología General}
+El flujo de trabajo típico en la práctica consiste en:
+\begin{enumerate}
+    \item Creación del proyecto en el software de desarrollo (ISE, Vivado o Quartus).
+    \item Escritura del código HDL en VHDL y Verilog.
+    \item Simulación y verificación funcional en el simulador integrado.
+    \item Síntesis e implementación del diseño.
+    \item Generación del archivo de programación (*.bit o *.jed).
+    \item Programación de la FPGA y verificación física de los resultados.
+\end{enumerate}
