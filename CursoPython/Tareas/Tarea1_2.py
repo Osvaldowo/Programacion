@@ -16,6 +16,8 @@ for i in range(int(total_de_articulos)):
     cantidad_articulo = int(input("Cuantas piezas quieres comprar? \n"))
     cantidad.append(cantidad_articulo)
     precio_articulo = float(input("Cuanto cuesta el producto? \n"))
+    if precio_articulo >= 100:
+        print("Acuerdate que ganas el minimo manito !!!!")
     precios.append(precio_articulo)
     
     
