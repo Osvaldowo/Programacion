@@ -1,0 +1,7 @@
+Dia 1: Esta es una nueva línea en el archivo.
+
+Dia 2: Sobrescribiendo el contenido anterior.
+
+Dia 3: Hoy también aprendí sobre el modo agregar en archivos.
+
+Dia 4: ¡Ahora puedo añadir contenido sin borrar lo anterior!

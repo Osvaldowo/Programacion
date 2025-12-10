@@ -17,3 +17,4 @@ funcion_ejemplo()
 
 print(f"Fuera de la funcion, la variable global es: {variable_global}")
 
+
