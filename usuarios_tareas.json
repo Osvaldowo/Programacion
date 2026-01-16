@@ -1,0 +1,27 @@
+{
+    "oswi": [
+        {
+            "descripcion": "Chaquetita",
+            "prioridad": "Baja",
+            "fecha": "12/01/2026"
+        },
+        {
+            "descripcion": "Cahqueta",
+            "prioridad": "Alta",
+            "fecha": "11/01/2026"
+        },
+        {
+            "descripcion": "Enterga Final",
+            "prioridad": "Media",
+            "fecha": "11/01/2026"
+        }
+    ],
+    "osvaldo": [
+        {
+            "descripcion": "Chaquetota",
+            "prioridad": "",
+            "fecha": "17/01/2026"
+        }
+    ],
+    "oswiwi": []
+}

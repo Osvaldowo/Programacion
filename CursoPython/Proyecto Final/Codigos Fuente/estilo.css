@@ -1,0 +1,78 @@
+/* Estilo General */
+QMainWindow {
+    background-color: #ffffff;
+}
+
+/* Etiquetas (Labels) para que sean visibles */
+QLabel {
+    font-size: 14px;
+    color: #333333; /* Gris oscuro para contraste total */
+    font-weight: bold;
+    background: transparent;
+}
+
+/* Estilo específico para el título de Login */
+QLabel#lbl_titulo_login {
+    font-size: 26px;
+    color: #6A1B32; /* Guinda IPN */
+    margin-bottom: 10px;
+}
+
+/* Campos de entrada */
+QLineEdit {
+    border: 1px solid #6A1B32;
+    border-radius: 4px;
+    padding: 6px;
+    color: #000000; /* Texto negro al escribir */
+    background-color: #fdfdfd;
+}
+
+/* Botones principales */
+QPushButton {
+    background-color: #6A1B32;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #4D1324;
+}
+
+/* Tabla de tareas */
+QTableWidget {
+    color: #333333;
+    gridline-color: #6A1B32;
+    selection-background-color: #6A1B32;
+    selection-color: #ffffff;
+}
+
+QHeaderView::section {
+    background-color: #6A1B32;
+    color: white;
+    font-weight: bold;
+}
+
+/* Tabla de Tareas - Contraste Total */
+QTableWidget {
+    background-color: #ffffff; /* Fondo de la tabla blanco */
+    color: #000000;            /* Texto de las celdas negro */
+    gridline-color: #6A1B32;   /* Líneas de división color Guinda IPN */
+    selection-background-color: #6A1B32;
+    selection-color: #ffffff;
+}
+
+/* Asegurar visibilidad de los ítems */
+QTableWidget::item {
+    color: #000000; 
+    padding: 5px;
+}
+
+/* Encabezados de la Tabla */
+QHeaderView::section {
+    background-color: #6A1B32; /* Guinda IPN */
+    color: #ffffff;            /* Texto blanco */
+    font-weight: bold;
+    border: 1px solid #ffffff;
+}
